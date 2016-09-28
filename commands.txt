@@ -1,0 +1,47 @@
+D:\Proj>git clone https://github.com/estatesgit/p1.git
+Cloning into 'p1'...
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+
+D:\Proj\p1>git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        a.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\Proj\p1>git add a.txt
+
+D:\Proj\p1>git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   a.txt
+
+
+D:\Proj\p1>git commit -m "1 - First Change"
+[master 0f03000] 1 - First Change
+ 1 file changed, 1 insertion(+)
+ create mode 100644 a.txt
+
+D:\Proj\p1>git log
+commit 0f03000d0de52be80ddd361c2547738d37fa7581
+Author: satgit <satgit2@gmail.com>
+Date:   Wed Sep 28 00:20:06 2016 -0700
+
+    1 - First Change
+
+commit 74492f5fa41934ccf68f3b3b75b5860e03ccbeed
+Author: estatesgit <estatesgit@gmail.com>
+Date:   Tue Sep 27 23:30:17 2016 -0700
+
+    Initial commit
+
+D:\Proj\p1>git branch
+* master
